@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane fx:id="PausePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #292929;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.GamePlayController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="30.0" layoutY="190.0" prefHeight="220.0" prefWidth="240.0">
+         <children>
+            <Button id="mainMenuButton" fx:id="pauseMenuButtonOne" mnemonicParsing="false" onAction="#Resume" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #5DBCD2; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-font-size: 16px; -fx-background-radius: 0px; -fx-border-radius: 0px;" stylesheets="@style.css" text="Resume">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button id="mainMenuButton" fx:id="pauseMenuButtonTwo" mnemonicParsing="false" onAction="#Save" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #FF0080; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-font-size: 16px; -fx-background-radius: 0px; -fx-border-radius: 0px;" stylesheets="@style.css" text="Save">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button id="mainMenuButton" fx:id="pauseMenuButtonThree" mnemonicParsing="false" onAction="#SaveAndExit" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #8C13FB; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-font-size: 16px; -fx-background-radius: 0px; -fx-border-radius: 0px;" stylesheets="@style.css" text="Save and Exit">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button id="mainMenuButton" fx:id="pauseMenuButtonFour" mnemonicParsing="false" onAction="#MainMenu" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #F6DF0E; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-font-size: 16px; -fx-background-radius: 0px; -fx-border-radius: 0px;" stylesheets="@style.css" text="Exit to Main Menu">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</Pane>

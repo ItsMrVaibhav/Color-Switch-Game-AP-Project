@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#updateScore" prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #292929;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.GamePlayController">
+   <children>
+      <Pane fx:id="myGameplayPane" layoutY="-350.0" prefHeight="1250.0" prefWidth="300.0" />
+      <Text fx:id="gameplayScore" fill="WHITE" layoutX="246.0" layoutY="56.0" onMouseClicked="#updateScore" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font name="Agency FB Bold" size="45.0" />
+         </font>
+      </Text>
+      <Ellipse fill="#686868" layoutX="36.0" layoutY="39.0" onMouseClicked="#PauseButton" radiusX="25.0" radiusY="25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Ellipse fx:id="myBall" fill="#ff0080" layoutX="148.0" layoutY="400.0" radiusX="15.0" radiusY="15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <ImageView fx:id="gameplayBackground" fitHeight="30.0" fitWidth="45.0" layoutX="13.0" layoutY="24.0" onMouseClicked="#PauseButton">
+         <image>
+            <Image url="@../Assets/Pause.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
